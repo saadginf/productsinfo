@@ -32,7 +32,7 @@ public class PrduitServiceImplementation implements ProduitService {
     @Override
     public Produit findPrduitById(Long id) {
         // TODO Auto-generated method stub
-        return produitRepository.getById(id);
+        return produitRepository.findById(id).get();
     }
 
     @Override

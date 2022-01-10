@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Produits</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <table class="table-striped">
+    <tr>
+      <th>reference</th>
+      <th>designation</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+    </tr>
+    <tr th:each="piterration:${produitshtml}">
+      <td th:text="${piterration.reference}"></td>
+      <td th:text="${piterration.designation}"></td>
+      <td th:text="${piterration.prix}"></td>
+      <td th:text="${piterration.quantite}"></td>
+    </tr>
+  </table>
+  <body>
+    <h1>PAGE PRODUIT</h1>
+  </body>
+</html>

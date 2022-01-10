@@ -13,6 +13,7 @@ public interface ProduitService {
     List<Produit> findAllProduits();
 
     // chercher les produits par mots clé
+
     // Consulter un produit
     Produit findPrduitById(Long id);
 
